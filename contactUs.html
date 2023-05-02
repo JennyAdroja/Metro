@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/contactUs.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="Company Logo" id="company_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home </a>
+            <a class="nav-item nav-link" href="aboutUs.html">About Us</a>
+            <a class="nav-item nav-link" href="export.html">Export</a>
+            <a class="nav-item nav-link" href="products.html">Products</a>
+            <a class="nav-item nav-link active" href="contactUs.html">Contact Us <span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+  </nav>
+  <h1 class="contactUs">Contact Us</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.51018547962!2d70.87695177498435!3d22.82060667931583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598cd94e4fc473%3A0xa83bb1727a63ddfb!2sMetro%20City%20Tiles%20Pvt%20Ltd!5e0!3m2!1sen!2sus!4v1682438310201!5m2!1sen!2sus" width="500" height="350" style="border:none; margin-left: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="reachUs" style="margin-top: 20px;">
+            <i class='bx bxl-whatsapp bx-sm' style='color:#559a40'></i>
+            <i class='bx bx-phone-call bx-sm'></i>
+            <p class="text-sm">88663 05646</p>
+        </div>
+        <div class="reachUs">
+            <i class='bx bxs-pointer bx-sm'></i>
+            <p class="text-sm"><a href="mailto:export@metrocera.com" style="color: black;">Send Email</a><br><a href="https://groupofmetro.com/" style="color: black;">www.groupofmetro.com</a></p>
+        </div>
+        <div class="reachUs">
+            <i class='bx bxs-map bx-sm'></i>
+            <p class="text-sm">8-A, National Highway, Lakhdhirpur road, Morbi-363642, Gujarat (INDIA)</p>
+        </div>
+      </div>
+      <div class="column">
+        <h3 style="text-align: center;">Get In Touch</h3>
+
+			<form id="contact-form" action="https://formsubmit.co/export@metrocera.com" method="POST">
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name" required>
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject" required>
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email" required>
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com/akash.trivedi.16568"><i class='bx bxl-facebook-square bx-md'></i></a>
+      <a href="https://www.instagram.com/metroceramicindia/"><i class='bx bxl-instagram-alt bx-md' ></i></a>
+      <a href="https://www.linkedin.com/in/akash-trivedi-6266b4134/"><i class='bx bxl-linkedin-square bx-md' ></i></a>
+    </div>
+    <div class="footer_nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="export.html">Export</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script>
+  document.getElementById("submit-btn").addEventListener("click", function() {
+  alert("Your message has been sent. Thank you!");
+});
+
+var phoneNumber = document.querySelector(".text-sm");
+
+phoneNumber.addEventListener("click", function() {
+  var number = phoneNumber.textContent;
+  navigator.clipboard.writeText(number);
+  alert("Phone number copied to clipboard!");
+});
+
+</script>
+</html>

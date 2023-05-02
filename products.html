@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/products.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="imgs/logo.png" alt="Company Logo" id="company_logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home </a>
+            <a class="nav-item nav-link" href="aboutUs.html">About Us</a>
+            <a class="nav-item nav-link" href="export.html">Export</a>
+            <a class="nav-item nav-link active" href="products.html">Products <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="contactUs.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  <div class="product">
+    <img src="imgs/tile_display.png" alt="tile" id="tileDisplay">
+    <h1 style="padding-top: 120px; font-weight: bold;">Products</h1>
+    <h4 style="font-size:50px;">We offer you products with unmatched quality and aesthetics, made using state of the art technology....</h4>
+</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiles Product Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="filter">
+      <label for="size-select" style="padding-left: 20px; padding-right: 10px;">Filter by size: </label>
+      <select id="size-select">
+        <option value="all">All</option>
+        <option value="small">600 x 600mm</option>
+        <option value="medium">600 x 1200mm</option>
+        <option value="large">800 x 800mm</option>
+        <option value="small1">800 x 1600mm</option>
+        <option value="medium1">1000 x 1000mm</option>
+      </select>
+      <label for="finish-select" style="padding-left: 20px; padding-right: 10px;">Filter by finish:</label>
+      <select id="finish-select">
+        <option value="all">All</option>
+        <option value="glazed">Glazed</option>
+        <option value="matte">Matte</option>
+        <option value="polished">Polished</option>
+      </select>
+      <div id="search-container" style="margin-top: 18px; margin-bottom: 30px;">
+        <input type="text" id="search-input" placeholder="Search..." style="border-radius: 5px; border: 1px solid gray; padding: 5px;">
+        <button type="button" id="search-button" style="padding:3px; width:60px; border-radius: 7px; border:1px solid gray">Go</button>
+      </div>      
+    </div>
+    <div id="tiles">
+      <div class="tile" data-size="small" data-finish="matte">
+        <img src="imgs/600x600mm/1.png" alt="Cemento Verde">
+        <p>Cemento Verde</p>
+      </div>
+      <div class="tile" data-size="small" data-finish="glazed">
+        <img src="imgs/600x600mm/2.png" alt="Cemento Blanco">
+        <p>Cemento Blanco</p>
+      </div>
+      <div class="tile" data-size="small" data-finish="matte">
+        <img src="imgs/600x600mm/3.png" alt="Dots Nero">
+        <p>Dots Nero</p>
+      </div>
+      <div class="tile" data-size="small" data-finish="matte">
+        <img src="imgs/600x600mm/4.png" alt="Recta Olive">
+        <p>Recta Olive</p>
+      </div>
+      <div class="tile" data-size="small" data-finish="polished">
+        <img src="imgs/600x600mm/5.png" alt="Castano Gray">
+        <p>Castano Gray</p>
+      </div>
+      <div class="tile" data-size="small" data-finish="polished">
+        <img src="imgs/600x600mm/6.png" alt="Blue Breccia">
+        <p>Blue Breccia</p>
+      </div>
+      <div class="tile" data-size="small" data-finish="matte">
+        <img src="imgs/600x600mm/7.png" alt="Prime Nero">
+        <p>Prime Nero</p>
+      </div>
+      <div class="tile" data-size="small" data-finish="glazed">
+        <img src="imgs/600x600mm/8.png" alt="Bottochino Classic">
+        <p>Bottochino Classic </p>
+      </div>
+      <div class="tile" data-size="small" data-finish="matte">
+        <img src="imgs/600x600mm/9.png" alt="Tender Marfil">
+        <p>Tender Marfil</p>
+      </div>
+      <div class="tile" data-size="small" data-finish="glazed">
+        <img src="imgs/600x600mm/10.png" alt="Tender Silver">
+        <p>Tender Silver</p>
+      </div>
+      <div class="tile" data-size="medium" data-finish="polished">
+        <img src="imgs/600x1200mm/1.png" alt="Jaspero Bronze">
+        <p>Jaspero Bronze</p>
+      </div>
+      <div class="tile" data-size="medium" data-finish="polished">
+        <img src="imgs/600x1200mm/2.png" alt="Diana White">
+        <p>Diana White</p>
+      </div>
+      <div class="tile" data-size="medium" data-finish="glazed">
+        <img src="imgs/600x1200mm/3.png" alt="Granite Ocean">
+        <p>Granite Ocean</p>
+      </div>
+      <div class="tile" data-size="medium" data-finish="matte">
+        <img src="imgs/600x1200mm/4.png" alt="Bianco Stone">
+        <p>Bianco Stone</p>
+      </div>
+      <div class="tile" data-size="medium" data-finish="polished">
+        <img src="imgs/600x1200mm/5.png" alt="Atlanta Ivory">
+        <p>Atlanta Ivory</p>
+      </div>
+      <div class="tile" data-size="medium" data-finish="matte">
+        <img src="imgs/600x1200mm/6.png" alt="Titanium Natural">
+        <p>Titanium Natural</p>
+      </div>
+      <div class="tile" data-size="large" data-finish="matte">
+        <img src="imgs/800x800mm/1.png" alt="Stucco Beige">
+        <p>Stucco Beige</p>
+      </div>
+      <div class="tile" data-size="large" data-finish="glazed">
+        <img src="imgs/800x800mm/2.png" alt="Levanto Light">
+        <p>Levanto Light</p>
+      </div>
+      <div class="tile" data-size="large" data-finish="glazed">
+        <img src="imgs/800x800mm/3.png" alt="Rigato White">
+        <p>Rigato White</p>
+      </div>
+      <div class="tile" data-size="large" data-finish="polished">
+        <img src="imgs/800x800mm/4.png" alt="Patagonia">
+        <p>Patagonia</p>
+      </div>
+      <div class="tile" data-size="small1" data-finish="matte">
+        <img src="imgs/800x1600mm/1.png" alt="Pietra Antrasite">
+        <p>Pietra Antrasite</p>
+      </div>
+      <div class="tile" data-size="small1" data-finish="glazed">
+        <img src="imgs/800x1600mm/2.png" alt="Black Jade">
+        <p>Black Jade</p>
+      </div>
+      <div class="tile" data-size="small1" data-finish="polished">
+        <img src="imgs/800x1600mm/3.png" alt="Sonata White">
+        <p>Sonata White</p>
+      </div>
+      <div class="tile" data-size="small1" data-finish="matte">
+        <img src="imgs/800x1600mm/matt1.png" alt="Sandune Cafe">
+        <p>Sandune Cafe</p>
+      </div>
+      <div class="tile" data-size="small1" data-finish="matte">
+        <img src="imgs/800x1600mm/matt2.png" alt="Aragon Grey">
+        <p>Aragon Grey</p>
+      </div>
+      <div class="tile" data-size="small1" data-finish="matte">
+        <img src="imgs/800x1600mm/matt3.png" alt="Linoso Bianco">
+        <p>Linoso Bianco</p>
+      </div>
+      <div class="tile" data-size="small1" data-finish="matte">
+        <img src="imgs/800x1600mm/matt4.png" alt="Armani Nero">
+        <p>Armani Nero</p>
+      </div>
+      <div class="tile" data-size="medium1" data-finish="glazed">
+        <img src="imgs/1000x1000mm/1.png" alt="Roman Wave">
+        <p>Roman Wave</p>
+      </div>
+      <div class="tile" data-size="medium1" data-finish="glazed">
+        <img src="imgs/1000x1000mm/2.png" alt="Armani Grey">
+        <p>Armani Grey</p>
+      </div>
+      <div class="tile" data-size="medium1" data-finish="polished">
+        <img src="imgs/1000x1000mm/3.png" alt="Linoso Nero">
+        <p>Linoso Nero</p>
+      </div>
+    </div>
+    <footer>
+      <div class="social-media">
+        <a href="https://www.facebook.com/akash.trivedi.16568"><i class='bx bxl-facebook-square bx-md'></i></a>
+        <a href="https://www.instagram.com/metroceramicindia/"><i class='bx bxl-instagram-alt bx-md' ></i></a>
+        <a href="https://www.linkedin.com/in/akash-trivedi-6266b4134/"><i class='bx bxl-linkedin-square bx-md' ></i></a>
+      </div>
+      <div class="footer_nav">
+       
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="export.html">Export</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+    </body>
+    <script src="script.js"></script>
+<script>
+const sizeSelect = document.getElementById('size-select');
+    const colorSelect = document.getElementById('finish-select');
+    const tiles = document.getElementById('tiles');
+
+    sizeSelect.addEventListener('change', filterTiles);
+    colorSelect.addEventListener('change', filterTiles);
+
+    function filterTiles() {
+      const selectedSize = sizeSelect.value;
+      const selectedColor = colorSelect.value;
+
+      const allTiles = tiles.querySelectorAll('.tile');
+      allTiles.forEach(tile => {
+        const tileSize = tile.getAttribute('data-size');
+        const tileColor = tile.getAttribute('data-finish');
+
+        const sizeMatch = selectedSize === 'all' || selectedSize === tileSize;
+        const colorMatch = selectedColor === 'all' || selectedColor === tileColor;
+        const showTile = sizeMatch && colorMatch;
+
+        if (showTile) {
+          tile.classList.remove('filtered');
+        } else {
+          tile.classList.add('filtered');
+        }
+      });
+    }
+    filterTiles();
+
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+
+searchButton.addEventListener('click', () => {
+  const query = searchInput.value.toLowerCase();
+
+  const tiles = document.querySelectorAll('.tile');
+
+  tiles.forEach((tile) => {
+    const name = tile.querySelector('p').textContent.toLowerCase();
+    const shouldShow = name.includes(query);
+
+    tile.style.display = shouldShow ? '' : 'none';
+  });
+});
+
+</script>
+</html>
