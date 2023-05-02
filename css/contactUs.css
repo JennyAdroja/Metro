@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+#company_logo{
+    display: block;
+    width: 100px;
+    height: 10 0px;
+}
+
+.contactUs{
+  height: 150px;
+  font-family: 'Bebas Neue', cursive;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.reachUs {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.reachUs i, .reachUs p {
+  margin: 0 5px;
+}
+
+.reachUs p {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+  width: auto;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #000;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: #666;
+}
+
+.footer_nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer_nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer_nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer_nav a:hover {
+  color: #666;
+}

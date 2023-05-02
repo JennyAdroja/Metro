@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+#company_logo{
+  display: block;
+  width: 100px;
+  height: 10 0px;
+}
+
+.company_profile{
+  height: 150px;
+  font-family: 'Bebas Neue', cursive;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.aboutUs{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  height: auto;
+}
+
+.aboutUs p{
+  width: 800px;
+  padding-left: 40px;
+}
+
+#tileDisplay{
+  height: 300px;
+  width: 600px;
+  float: right;
+  padding-right: 60px;
+  border-radius: 10px;
+  animation: fadeInRight 4s ease-in-out;
+}
+
+.fam_sketch{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-container {
+  display: flex;
+  margin: 30px;
+}
+  
+.card {
+  width: 33.33%;
+  opacity: 80%;
+  border: 1px solid #ccc;
+  border-radius:15px 50px;
+  padding: 20px;
+  margin: 10px 10px;
+  color: white;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+.card i, .card b {
+  display: inline;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 30px;
+}
+  
+.social-media {
+  text-align: center;
+}
+  
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #000;
+  font-size: 20px;
+}
+  
+.social-media a:hover {
+  color: #666;
+}
+  
+.footer_nav {
+  margin-top: 10px;
+  text-align: center;
+}
+  
+.footer_nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+.footer_nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+  
+.footer_nav a {
+  color: #000;
+  text-decoration: none;
+}
+  
+.footer_nav a:hover {
+  color: #666;
+}
+  
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}

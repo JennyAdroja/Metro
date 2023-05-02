@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+#company_logo{
+    display: block;
+    width: 100px;
+    height: 10 0px;
+}
+
+.export{
+  height: 150px;
+  font-family: 'Bebas Neue', cursive;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-size: 70px;
+  text-align: center; 
+}
+
+.flag-slideshow {
+  width: 80%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.flag-slideshow-container {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  margin-bottom: 40px;
+}
+
+.flag-slideshow-container img {
+  margin-right: 20px;
+  width: 180px;
+  height: 100px;
+  border-radius: 7px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #000;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: #666;
+}
+
+.footer_nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer_nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer_nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer_nav a:hover {
+  color: #666;
+}
+
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: auto;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column h6{
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.column i{
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.mySlides {
+  display: none;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.mySlides img {
+  vertical-align: middle;
+  height: 500px;
+  width: 200px;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease-out;
+}
+
+.dot .active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-container i {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.icon-container p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 10px;
+}
